@@ -1,13 +1,14 @@
-require('./config/config')
+// require('./config/config')
 require('./models/db')
+const dotenv= require('dotenv')
 
 
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-
 const rtsIndex  = require('./routes/index.router')
+dotenv.config();
 const app = express();
 
 //middleware
