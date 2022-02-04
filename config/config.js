@@ -1,4 +1,7 @@
+
+
+
 const config = {
-  MONGODB_URI: "mongodb://localhost:27017/MEANStackDB",
+  MONGODB_URI: process.env.MONGODB_URI,
 };
 module.exports = config;
